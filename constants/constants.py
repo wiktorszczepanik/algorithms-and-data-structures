@@ -1,1 +1,2 @@
 NOT_FOUND = -1
+EMPTY_LIST = []

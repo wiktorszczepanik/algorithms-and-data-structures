@@ -10,3 +10,6 @@ Sorts:
 - insertion sort
 - merge sort
 - selection sort
+- quick sort (+ partition)
+- count sort
+- radix sort

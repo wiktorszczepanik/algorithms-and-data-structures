@@ -1,5 +1,7 @@
 import math
 from typing import List, Union
+from constants.constants import NOT_FOUND
+
 
 def jump_search(array: List[Union[int, float]],
     key: Union[int, float], length: int = None) -> int:
@@ -17,9 +19,10 @@ def jump_search(array: List[Union[int, float]],
                 return step - block_size + counter
             counter += 1
 
-    return -1 # Not found
+    return NOT_FOUND
+
 
 # array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# key = 3
+# key = 5
 # length = len(array)
-# print(jump_search(array, key, length)) # 2
+# print(jump_search(array, key, length)) # 4
